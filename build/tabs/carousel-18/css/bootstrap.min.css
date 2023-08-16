@@ -584,6 +584,10 @@ pre code {
 	width: 1200px;
 }
 
+.production-block-slider {
+	width: 1200px;
+}
+
 @media (min-width:576px) {
 
 	.container,

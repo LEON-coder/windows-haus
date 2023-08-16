@@ -2,6 +2,10 @@
   width: 1200px;
 }
 
+.production-block-slider {
+  width: 1200px;
+}
+
 .carousel-nav {
   width          : 100%;
   display        : flex;
@@ -11,8 +15,10 @@
 }
 
 .text-center {
-  text-align: center;
-  margin-top: 95.5px;
+  text-align : center;
+  margin-top : 95.5px;
+  color      : #2F2F51;
+  line-height: normal;
 }
 
 .how-we-work {
@@ -287,9 +293,9 @@
 
 
 
-.advantage-pic {
-  width      : 86.64px;
-  height     : 79.267px;
+.advantage-pic:last-child {
+  width      : 80.764px;
+  height     : 98.392px;
   flex-shrink: 0;
 }
 
@@ -349,6 +355,7 @@
   align-items    : center;
   margin-left    : auto;
   margin-right   : auto;
+  margin-bottom  : 86px;
 }
 
 .link-advantage {
