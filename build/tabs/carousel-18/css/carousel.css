@@ -344,20 +344,6 @@
   line-height: 36px;
 }
 
-.advantage-block-link {
-  display        : flex;
-  justify-content: center;
-  width          : 312px;
-  height         : 54.5px;
-  border-radius  : 3px;
-  background     : #ef7f1a;
-  margin-top     : 82px;
-  align-items    : center;
-  margin-left    : auto;
-  margin-right   : auto;
-  margin-bottom  : 86px;
-}
-
 .link-advantage {
   color          : #fff;
   font-family    : Roboto;

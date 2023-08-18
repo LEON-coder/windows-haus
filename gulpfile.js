@@ -25,7 +25,7 @@ function compilePug() {
 		.pipe(pug({
 			pretty: true
 		}))
-		.pipe(gulp.dest('./'))
+		.pipe(gulp.dest('.'))
 		.pipe(browserSync.stream());
 };
 

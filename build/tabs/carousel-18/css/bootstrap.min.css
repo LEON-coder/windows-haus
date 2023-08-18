@@ -4740,6 +4740,10 @@ input[type=submit].btn-block {
 	display: block
 }
 
+.tab-content>.active {
+	display: block
+}
+
 .navbar {
 	position       : relative;
 	display        : -ms-flexbox;
@@ -7571,10 +7575,13 @@ button.bg-dark:hover {
 	display: table-cell !important
 }
 
-.d-flex {
+.d-flex,
+.production-block-d-flex {
 	display: -ms-flexbox !important;
 	display: flex !important
 }
+
+
 
 .d-inline-flex {
 	display: -ms-inline-flexbox !important;
