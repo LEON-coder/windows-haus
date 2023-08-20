@@ -1,5 +1,9 @@
 .container-slider {
-  width: 1200px;
+  width         : 1200px;
+  position      : relative;
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
 }
 
 .production-block-slider {
@@ -22,8 +26,12 @@
 }
 
 .how-we-work {
-  width  : 150px;
+  width  : 200px;
   padding: 10px 25px 10px 25px;
+}
+
+.carousel-nav a:nth-child(2).active {
+  width: 200px;
 }
 
 .owl-1 .owl-nav {
