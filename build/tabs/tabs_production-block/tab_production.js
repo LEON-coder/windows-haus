@@ -99,3 +99,37 @@
 		dots[i].addEventListener("click",dot_click,false);
 	}
 })();
+
+
+
+$(function () {
+	var tab = $('#tabs__production-block .tabs__production-items > div');
+	tab.hide().filter(':first').show();
+
+	// Клики по вкладкам.
+	$('#tabs__production-block .tabs__production-nav a').click(function () {
+		tab.hide();
+		tab.filter(this.hash).show();
+		$('#tabs__production-block .tabs__production-nav a').removeClass('active');
+		$(this).addClass('active');
+		return false;
+	}).filter(':first').click();
+
+	// Клики по якорным ссылкам.
+	$('.tabs-target').click(function () {
+		$('#tabs .tabs-nav a[href=' + $(this).attr('href') + ']').click();
+	});
+
+	// Отрытие вкладки из хеша URL
+	if (window.location.hash) {
+		$('#tabs-nav a[href=' + window.location.hash + ']').click();
+		window.scrollTo(0,$("#".window.location.hash).offset().top);
+	}
+});
+
+
+
+
+
+
+

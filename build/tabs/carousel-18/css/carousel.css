@@ -18,6 +18,14 @@
   margin-top     : 40px;
 }
 
+.prodiction-carousel-nav {
+  width          : 100%;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  margin-top     : 40px;
+}
+
 .text-center {
   text-align : center;
   margin-top : 95.5px;
