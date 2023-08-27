@@ -1369,15 +1369,6 @@ p.ism-badge a.ism-link:hover {
 }
 
 
-.contacts {
-    display         : flex;
-    width           : 100%;
-    height          : 994px;
-    justify-content : center;
-    align-items     : center;
-    background-color: #141414;
-}
-
 .contacts__block {
     display        : flex;
     width          : 636px;
@@ -1567,12 +1558,6 @@ p.ism-badge a.ism-link:hover {
     height        : 61px;
 }
 
-.address-block {
-    display        : flex;
-    justify-content: flex-end;
-    width          : 293px;
-}
-
 .location {
     height        : 22px;
     font-family   : ReformaGroteskDemiC;
@@ -1592,13 +1577,6 @@ p.ism-badge a.ism-link:hover {
     display        : flex;
     justify-content: flex-end;
     margin-top     : 13px;
-}
-
-.phone-block {
-    display        : flex;
-    justify-content: flex-end;
-    width          : 126px;
-    height         : 22px;
 }
 
 .number_contacts {
@@ -1624,13 +1602,6 @@ p.ism-badge a.ism-link:hover {
 .e-mail {
     display        : flex;
     text-decoration: none;
-}
-
-.e-mail-block {
-    display    : flex;
-    width      : 112px;
-    height     : 22px;
-    margin-left: 30px;
 }
 
 .e-mail_icon {
@@ -2833,13 +2804,6 @@ footer {
         justify-content: center;
         align-items    : center;
         margin-top     : 50px;
-    }
-
-    .address-block {
-        display        : flex;
-        justify-content: center;
-        width          : 100%;
-        align-items    : center;
     }
 
     .address_icon {

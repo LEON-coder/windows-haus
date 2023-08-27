@@ -125,6 +125,15 @@ rewievBlogClose.addEventListener('click',function () {
 });
 
 
+// Функция открытия модального окна Портфолио во вкладке portfolio
+let portfolioImg = document.querySelector('.slider__item:nth-child(1)');
+let portfolioPopup = document.querySelector('.pop-up-portfolio__background')
+let portfolioPopupClose = document.querySelector('.pop-up-portfolio__close')
+
+portfolioImg.addEventListener('click',function () {
+	portfolioPopup.classList.toggle('pop-up-portfolio-open');
+});
+
 
 
 
