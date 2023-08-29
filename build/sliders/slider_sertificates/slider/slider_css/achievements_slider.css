@@ -369,16 +369,6 @@ p.ism-badge a.ism-link:hover {
     padding-top: 5%;
 }
 
-#my-slider .ism-frame {
-    position     : absolute;
-    top          : 0;
-    bottom       : 0;
-    left         : 0;
-    width        : 100%;
-    border-radius: 3px;
-    background   : #FFF;
-}
-
 #my-slider .ism-button {
     display : block;
     position: absolute;
@@ -403,6 +393,10 @@ p.ism-badge a.ism-link:hover {
     background-image: url(../../../slider_sertificates/arrow.svg);
     width           : 70px;
     height          : 70px;
+}
+
+#my-slider .ism-button-next {
+    top: 40%;
 }
 
 #my-slider .ism-radios {
@@ -2933,13 +2927,6 @@ footer {
 
 
 @media screen and (max-width: 1440px) {
-    #my-slider .ism-button-prev {
-        top: 50%;
-    }
-
-    #my-slider .ism-button-next {
-        top: 50%;
-    }
 
     .container {
         width          : 100%;

@@ -19,7 +19,13 @@
 	position: relative
 }
 
-
+.sertificate-container {
+	width          : 100%;
+	margin-top     : 0;
+	display        : flex;
+	justify-content: center;
+	height         : 461px;
+}
 
 #slider_bl .slider-prev-next-control {
 	height           : 50px;
@@ -45,6 +51,21 @@
 	transform  : rotate(180deg);
 }
 
+
+#my-slider .ism-button-prev {
+	top: 25%;
+}
+
+#my-slider .ism-frame {
+	position     : absolute;
+	top          : 0;
+	bottom       : 0;
+	left         : 0;
+	width        : 100%;
+	border-radius: 3px;
+	background   : #FFF;
+	height       : 461px;
+}
 
 
 

@@ -10,7 +10,8 @@
 	display        : flex;
 	justify-content: space-between;
 	align-items    : center;
-	margin         : 30px 0;
+	margin         : 0;
+	width          : 1200px;
 }
 
 .slider__container {
@@ -502,29 +503,35 @@
 }
 
 .offers__slider .slider__container {
-	height   : 418px;
-	margin   : 0 auto;
-	max-width: 100%;
+	height    : 418px;
+	margin    : 0 auto;
+	max-width : 100%;
+	overflow-y: hidden;
 }
 
 .offers__slider .slider__container .slider__item:nth-child(1) {
-	margin-left: -40%;
+	width      : 1200px;
+	margin-left: 0;
 }
 
 .offers__slider .slider__container .slider__item:nth-child(2) {
-	margin-left: calc(12% - 150px);
+	margin-left: calc(120% - 150px);
+	width      : 1200px;
 }
 
 .offers__slider .slider__container .slider__item:nth-child(3) {
-	margin-left: calc(37% - 140px);
+	margin-left: calc(115% - 140px);
+	width      : 1200px;
 }
 
 .offers__slider .slider__container .slider__item:nth-child(4) {
-	margin-left: calc(63% - 140px);
+	margin-left: calc(115% - 140px);
+	width      : 1200px;
 }
 
 .offers__slider .slider__container .slider__item:nth-child(5) {
-	margin-left: calc(88% - 130px);
+	margin-left: calc(113% - 130px);
+	width      : 1200px;
 }
 
 .offers__slider .slider__container .slider__item:nth-child(6) {
@@ -553,27 +560,6 @@
 	}
 }
 
-@media (max-width: 1000px) {
-	.offers__slider .slider__container .slider__item:nth-child(1) {
-		margin-left: -100%;
-	}
-
-	.offers__slider .slider__container .slider__item:nth-child(2) {
-		margin-left: -100%;
-	}
-
-	.offers__slider .slider__container .slider__item:nth-child(3) {
-		margin-left: calc(50% - 140px);
-	}
-
-	.offers__slider .slider__container .slider__item:nth-child(4) {
-		margin-left: 140%;
-	}
-
-	.offers__slider .slider__container .slider__item:nth-child(5) {
-		margin-left: 140%;
-	}
-}
 
 .offers__card {
 	width        : 277px;
@@ -1369,10 +1355,13 @@ h1 {
 }
 
 .offers__arrows {
-	width          : 83px;
+	width          : 100%;
 	display        : flex;
 	justify-content: space-between;
 	margin-right   : 76px;
+	position       : absolute;
+	top            : 40%;
+	z-index        : 4;
 }
 
 .offers__title {
@@ -1491,7 +1480,6 @@ body {
 
 .block_inner {
 	max-width: 1240px;
-	margin   : 0px auto;
 }
 
 @media (max-width: 1240px) {
