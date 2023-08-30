@@ -2,8 +2,9 @@ let frameModal = document.querySelector('.call-measurer-home__background');
 let pushButtonMeasurement = document.querySelector('.advantage-block-link');
 let closeModalMeasurement = document.querySelector('.call-measurer-home__cross')
 let requestMeasurementHeader = document.querySelector('.request-for-measurement')
-let orderCalcModal = document.querySelector('.order_payment__background');
 let offerCalcLink = document.querySelector('.offer-calc-block');
+let offerCalcModal = document.querySelector('.order-payment__background-calc');
+let offerCalcClose = document.querySelector('.order-payment__close-calc');
 let orderPaymentClose = document.querySelector('.order_payment__close');
 let orderPaymentCloseHeader = document.querySelector('.order-payment__close-header');
 let orderPaymentHeaderLink = document.querySelector('.order-payment-block-header')
@@ -100,13 +101,19 @@ orderPaymentCloseHeader.addEventListener('click',function () {
 
 
 // Функция открытия модального окна для ссылки заказать расчет в блоке quality-items-block
+
+
 offerCalcLink.addEventListener('click',function () {
-	orderCalcModal.classList.toggle('order_payment__background-open');
+	offerCalcModal.classList.toggle('order-payment__modal-open');
 });
 
-orderPaymentClose.addEventListener('click',function () {
-	orderCalcModal.classList.remove('order_payment__background-open');
+offerCalcClose.addEventListener('click',function () {
+	offerCalcModal.classList.remove('order-payment__modal-open');
 });
+
+
+
+
 
 
 // Функция открытия модального окна для ссылки "оставить отзыв" во вкладке about-company__reviews-block
@@ -125,6 +132,7 @@ rewievBlogClose.addEventListener('click',function () {
 });
 
 
+/*
 // Функция открытия модального окна Портфолио во вкладке portfolio
 let portfolioImg = document.querySelector('.slider__item:nth-child(1)');
 let portfolioPopup = document.querySelector('.pop-up-portfolio__background')
@@ -133,6 +141,11 @@ let portfolioPopupClose = document.querySelector('.pop-up-portfolio__close')
 portfolioImg.addEventListener('click',function () {
 	portfolioPopup.classList.toggle('pop-up-portfolio-open');
 });
+portfolioPopupClose.addEventListener('click',function () {
+	portfolioPopup.classList.remove('.pop-up-portfolio-open');
+});
+
+*/
 
 
 

@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Cormorant:wght@500&family=Roboto:wght@400;700&display=swap");
 
 
-* {
-	margin : 0;
-	padding: 0;
-}
-
 .slider {
 	display        : flex;
 	justify-content: space-between;
@@ -22,6 +17,10 @@
 	max-width  : 75%;
 	width      : 100%;
 	transition : all 0.5s ease;
+}
+
+.portfolio-width {
+	width: 300px;
 }
 
 .slider__item {
@@ -503,10 +502,14 @@
 }
 
 .offers__slider .slider__container {
-	height    : 418px;
-	margin    : 0 auto;
-	max-width : 100%;
-	overflow-y: hidden;
+	max-width    : 100%;
+	overflow-y   : hidden;
+	margin-top   : 47px;
+	margin-bottom: 62px;
+}
+
+.portfolio-item {
+	width: 400px;
 }
 
 .offers__slider .slider__container .slider__item:nth-child(1) {
@@ -538,28 +541,37 @@
 	margin-left: 140%;
 }
 
-@media (max-width: 1240px) {
-	.offers__slider .slider__container .slider__item:nth-child(1) {
-		margin-left: -40%;
-	}
 
-	.offers__slider .slider__container .slider__item:nth-child(2) {
-		margin-left: calc(15% - 140px);
-	}
 
-	.offers__slider .slider__container .slider__item:nth-child(3) {
-		margin-left: calc(50% - 140px);
-	}
-
-	.offers__slider .slider__container .slider__item:nth-child(4) {
-		margin-left: calc(85% - 140px);
-	}
-
-	.offers__slider .slider__container .slider__item:nth-child(5) {
-		margin-left: 140%;
-	}
+.offers__slider .slider__container .slider__item_portfolio {
+	width : 214.787px;
+	height: 214.787px;
 }
 
+.offers__slider .slider__container .slider__item_portfolio:nth-child(1) {
+	margin-left: 100px;
+}
+
+.offers__slider .slider__container .slider__item_portfolio:nth-child(2) {
+	margin-left: calc(10% - 80px);
+}
+
+.offers__slider .slider__container .slider__item_portfolio:nth-child(3) {
+	margin-left: calc(15% - 140px);
+}
+
+.offers__slider .slider__container .slider__item_portfolio:nth-child(4) {
+	margin-left: calc(15% - 140px);
+}
+
+.offers__slider .slider__container .slider__item_portfolio:nth-child(5) {
+	margin-left: calc(113% - 130px);
+
+}
+
+.offers__slider .slider__container .slider__item_portfolio:nth-child(6) {
+	margin-left: 140%;
+}
 
 .offers__card {
 	width        : 277px;
@@ -823,8 +835,7 @@ footer {
 }
 
 #main {
-	width : 100%;
-	margin: 20px 0;
+	width: 100%;
 }
 
 h1 {
@@ -1337,8 +1348,8 @@ h1 {
 }
 
 #offers {
-	margin: 30px 0;
-	width : 100%;
+
+	width: 100%;
 }
 
 .offers__header {
@@ -1346,13 +1357,6 @@ h1 {
 	align-items: center;
 }
 
-@media (max-width: 1000px) {
-	.offers__header {
-		width    : 95%;
-		margin   : 0 auto;
-		flex-wrap: wrap;
-	}
-}
 
 .offers__arrows {
 	width          : 100%;
@@ -1360,7 +1364,7 @@ h1 {
 	justify-content: space-between;
 	margin-right   : 76px;
 	position       : absolute;
-	top            : 40%;
+	top            : 33%;
 	z-index        : 4;
 }
 
@@ -1445,16 +1449,6 @@ h1 {
 		justify-content: space-between;
 		width          : 90%;
 	}
-}
-
-* {
-	margin            : 0;
-	padding           : 0;
-	box-sizing        : border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing   : border-box;
-	-webkit-appearance: none;
-	-moz-appearance   : none;
 }
 
 a {
