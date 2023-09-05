@@ -5,7 +5,7 @@ let getSliderChildren = (arrow) => {
 }
 
 
-let prevArrows = document.querySelectorAll(".slider__arrow_left");
+let prevArrows = document.querySelectorAll(".slider-portfolio__arrow_left");
 
 for (let prevArrow of prevArrows) {
 	prevArrow.addEventListener('click',function () {
@@ -14,7 +14,7 @@ for (let prevArrow of prevArrows) {
 	});
 };
 
-let nextArrows = document.querySelectorAll(".slider__arrow_right");
+let nextArrows = document.querySelectorAll(".slider-portfolio__arrow_right");
 
 for (let nextArrow of nextArrows) {
 	nextArrow.addEventListener('click',function () {

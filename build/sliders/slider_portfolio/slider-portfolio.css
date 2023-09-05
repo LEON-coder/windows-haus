@@ -8,10 +8,12 @@
 
 .slider {
 	display        : flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items    : center;
 	margin         : 0;
-	width          : 1200px;
+	padding-left   : 70px;
+	padding-right  : 70px;
+	width          : 100%;
 }
 
 .slider__container {
@@ -503,26 +505,25 @@
 }
 
 .offers__slider .slider__container {
-	height    : 418px;
-	margin    : 0 auto;
+	height    : 220px;
 	max-width : 100%;
-	overflow-y: hidden;
+	margin-top: 47px;
 }
 
 .offers__slider .slider__container .slider__item:nth-child(1) {
-	margin-left: 60px;
+	margin-left: 0px;
 }
 
 .offers__slider .slider__container .slider__item:nth-child(2) {
-	margin-left: calc(40% - 155px);
+	margin-left: calc(40% - 165px);
 }
 
 .offers__slider .slider__container .slider__item:nth-child(3) {
-	margin-left: calc(60% - 130px);
+	margin-left: calc(60% - 115px);
 }
 
 .offers__slider .slider__container .slider__item:nth-child(4) {
-	margin-left: calc(82% - 140px);
+	margin-left: calc(85% - 120px);
 }
 
 .offers__slider .slider__container .slider__item:nth-child(5) {
@@ -532,6 +533,11 @@
 
 .offers__slider .slider__container .slider__item:nth-child(6) {
 	margin-left: 140%;
+}
+
+
+.portfolio__map {
+	margin-top: 62px;
 }
 
 @media (max-width: 1240px) {
@@ -818,10 +824,7 @@ footer {
 	flex-shrink: 0;
 }
 
-#main {
-	width : 100%;
-	margin: 20px 0;
-}
+
 
 h1 {
 	color        : #000;
@@ -1333,8 +1336,8 @@ h1 {
 }
 
 #offers {
-	margin: 30px 0;
-	width : 100%;
+	width   : 100%;
+	position: relative;
 }
 
 .offers__header {
@@ -1407,6 +1410,7 @@ h1 {
 	margin-top: 0px;
 }
 
+
 @media (max-width: 1000px) {
 	#partners {
 		display        : flex;
@@ -1474,21 +1478,10 @@ body {
 	min-height     : 120vh;
 }
 
-.block_inner {
-	max-width: 1240px;
-}
 
-@media (max-width: 1240px) {
-	.block_inner {
-		max-width: 950px;
-	}
-}
 
-@media (max-width: 1000px) {
-	.block_inner {
-		max-width: 375px;
-	}
-}
+
+
 
 h2 {
 	color      : #000;
@@ -1644,8 +1637,9 @@ h2 {
 		margin-left: calc(50% - 140px);
 	}
 
-	.block_inner {
-		max-width: 600px;
+	.block_inner-portfolio-wrap {
+		display        : flex;
+		justify-content: center;
 	}
 
 	.partners__slider .slider__container .slider__item:nth-child(3) {
