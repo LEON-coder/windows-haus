@@ -6,19 +6,17 @@
   align-items   : center;
 }
 
+.container {
+  width     : 1200px;
+  margin-top: 0;
+}
+
 .production-block-slider {
   width: 1200px;
 }
 
-.carousel-nav {
-  width          : 100%;
-  display        : flex;
-  justify-content: center;
-  align-items    : center;
-  margin-top     : 40px;
-}
-
-.prodiction-carousel-nav {
+.carousel-nav,
+.carousel-nav-tabs-production {
   width          : 100%;
   display        : flex;
   justify-content: center;
@@ -33,11 +31,7 @@
   line-height: normal;
 }
 
-.how-we-work {
-  width: 200px;
-}
-
-.carousel-nav a:nth-child(2).active {
+#how-we-work {
   width: 200px;
 }
 
@@ -143,7 +137,8 @@
   color: #000;
 }
 
-.carousel-nav a.active {
+.carousel-nav a.active,
+.carousel-nav-tabs-production a.active {
   border-radius  : 3px;
   background     : #ef7f04;
   width          : 150px;

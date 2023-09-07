@@ -8,21 +8,19 @@
 }
 
 .ism-slider {
-  overflow               : hidden;
-  position               : relative;
-  padding                : 0 !important;
-  -webkit-user-select    : none;
-  -khtml-user-select     : none;
-  -moz-user-select       : none;
-  -ms-user-select        : none;
-  user-select            : none;
-  cursor                 : default;
-  z-index                : 2;
-  background-color       : rgba(0, 0, 0, 0.1);
-  -webkit-animation      : ism-fadein 3s;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip   : padding;
-  background-clip        : padding-box;
+  overflow                  : hidden;
+  position                  : relative;
+  padding                   : 0 !important;
+  -webkit-user-select       : none;
+  -khtml-user-select        : none;
+  -moz-user-select          : none;
+  -ms-user-select           : none;
+  user-select               : none;
+  cursor                    : default;
+  z-index                   : 2;
+  /* -webkit-background-clip: padding-box; */
+  -moz-background-clip      : padding;
+  background-clip           : padding-box;
 }
 
 @-webkit-keyframes ism-fadein {
@@ -411,10 +409,9 @@ p.ism-badge a.ism-link:hover {
 /* SLIDER */
 
 #my-slider-production {
-  width                : 100%;
-  -webkit-border-radius: 5px;
-  border-radius        : 5px;
-  height               : 461px;
+  width        : 100%;
+  border-radius: 5px;
+  height       : 461px;
 }
 
 #my-slider-production-ism-badge {
@@ -449,7 +446,8 @@ p.ism-badge a.ism-link:hover {
 
 #my-slider-production .ism-button-prev {
   background-image: url(../../../../../../build/img/production-block/arrow-left.svg);
-  left            : 20px;
+  left            : 0px;
+  z-index         : 35;
 }
 
 #my-slider-production .ism-button-next {

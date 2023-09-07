@@ -1,29 +1,12 @@
-@font-face {
-	font-family: Roboto;
-	src        : url(../../../build/fonts/roboto/Roboto-Regular.woff2);
-}
-
-
-
-
-
-#tabs__production-block {
-	display        : flex;
-	flex-direction : column;
-	justify-content: center;
-	align-items    : center;
-	margin-top     : 103px;
-}
-
-
-.container {
-	height: auto;
-}
-
-.production-block {
+.about-company {
 	width          : 100%;
 	display        : flex;
 	justify-content: center;
+	position       : relative;
+}
+
+.about-company-slider {
+	width: 1200px;
 }
 
 .about-company__wrap {
@@ -37,15 +20,52 @@
 	display: flex;
 }
 
-.production-block__information-block__content {
+.about-company__information-block__content {
 	display        : flex;
-	margin-top     : 0;
+	margin-top     : 35px;
+	justify-content: space-between;
 	background     : #FFF;
-	width          : 1200px;
-	justify-content: flex-start;
 }
 
-.production-block__link {
+.about-company__logo {
+	width      : 198.125px;
+	height     : 139.459px;
+	flex-shrink: 0;
+	margin-top : 46px;
+	margin-left: 50px;
+}
+
+
+.about-company__headline {
+	color          : #2f2f51;
+	font-family    : Roboto;
+	font-size      : 24px;
+	font-style     : normal;
+	font-weight    : 700;
+	line-height    : normal;
+	display        : flex;
+	justify-content: center;
+}
+
+.about-company__block-video {
+	background : url(../../../build/img/about-company/video-block.png);
+	width      : 595px;
+	height     : 461px;
+	flex-shrink: 0;
+	position   : relative;
+}
+
+
+.block-video {
+	position       : absolute;
+	display        : flex;
+	justify-content: center;
+	align-items    : center;
+	left           : 50%;
+	top            : 35%;
+}
+
+.about-company__link {
 	color          : #2f2f51;
 	font-family    : Roboto;
 	font-size      : 18px;
@@ -62,94 +82,8 @@
 	padding        : 10px 25px 10px 25px;
 }
 
-.production-block__picture {
-	width        : 567px;
-	height       : 461px;
-	flex-shrink  : 0;
-	border-radius: 3px;
-	background   : lightgray 50% / cover no-repeat;
-}
-
-
-.about-company__headline {
-	color          : #2f2f51;
-	font-family    : Roboto;
-	font-size      : 24px;
-	font-style     : normal;
-	font-weight    : 700;
-	line-height    : normal;
-	display        : flex;
-	justify-content: center;
-}
-
-.production-block__block-describe {
-	display    : flex;
-	width      : 578px;
-	margin-left: 34px;
-}
-
-.production-block___information-block_content {
-	display   : flex;
-	margin-top: 27px;
-}
-
-.production-block__block-describe__wrap {
-	display       : flex;
-	flex-direction: column;
-	margin-top    : 0px;
-	margin-left   : 0;
-}
-
-
-.production-block__headline {
-	color        : #EF7F04;
-	font-family  : Roboto;
-	font-size    : 36px;
-	font-style   : normal;
-	font-weight  : 700;
-	line-height  : normal;
-	margin-top   : 74px;
-	margin-bottom: 0;
-	display      : flex;
-}
-
-.production-block__describe-text {
-	color        : #000;
-	font-family  : Roboto;
-	font-size    : 18px;
-	font-style   : normal;
-	font-weight  : 300;
-	line-height  : normal;
-	margin-top   : 35px;
-	width        : 390px;
-	margin-bottom: 0;
-	text-align   : initial;
-}
-
-.production-block__table-block {
-	display       : flex;
-	flex-direction: column;
-	margin-top    : 30px;
-}
-
-.production-block__cell-last {
-	color      : #2F2F51;
-	font-family: Roboto;
-	font-size  : 18px;
-	font-style : normal;
-	font-weight: 700;
-	line-height: 40px;
-}
-
-
-.production-block__cell-block {
-	display    : flex;
-	color      : #000;
-	font-family: Roboto;
-	font-size  : 18px;
-	font-style : normal;
-	font-weight: 400;
-	line-height: 40px;
+.about-company__link:last-child {
+	margin-right: 0;
 }
 
 .about-company__list {
@@ -269,6 +203,20 @@
 	line-height: 36px;
 }
 
+.advantage-block-link {
+	display        : flex;
+	justify-content: center;
+	width          : 312px;
+	height         : 54.5px;
+	border-radius  : 3px;
+	background     : #ef7f1a;
+	margin-top     : 82px;
+	align-items    : center;
+	margin-left    : auto;
+	margin-right   : auto;
+	margin-bottom  : 86px;
+	cursor         : pointer;
+}
 
 .link-advantage {
 	color          : #fff;
@@ -287,258 +235,196 @@
 	flex-shrink: 0;
 }
 
-.production-block__control-slider {
-	position       : absolute;
-	top            : 63%;
-	width          : 100%;
+.about-company__information-block_how-we-work {
+	width         : 1200px;
+	height        : 461px;
+	flex-shrink   : 0;
+	display       : flex;
+	flex-direction: column;
+	align-items   : center;
+}
+
+.how-we-work__headline {
+	margin-top    : 36px;
+	color         : #2F2F51;
+	text-align    : center;
+	font-family   : Roboto;
+	font-size     : 16px;
+	font-style    : normal;
+	font-weight   : 700;
+	line-height   : 26px;
+	text-transform: uppercase;
+}
+
+.how-we-work__block-advantages {
+	display        : flex;
+	margin-top     : 74px;
 	justify-content: space-between;
+	width          : 100%;
+}
+
+
+.how-we-work__advantage:nth-child(1) {
+	padding-left: 70px;
+}
+
+.how-we-work__advantage:nth-child(4) {
+	padding-right: 70px;
+}
+
+.how-we-work__advantage {
 	display        : flex;
-	z-index        : 4;
-}
-
-.production-block__slider-left {
-	position: absolute;
-	left    : -50px;
-}
-
-.production-block__slider-left:hover,
-.production-block__slider-right:hover {
-	stroke: #EF7F1A;
-}
-
-.production-block__slider-left:active,
-.production-block__slider-right:active {
-	stroke: black;
-}
-
-.production-block__slider-right {
-	position : absolute;
-	right    : -50px;
-	transform: rotate(180deg);
-}
-
-
-
-
-#tabs {
-	margin-top     : 103px;
-	display        : flex;
+	flex-direction : column;
+	width          : 251.012px;
 	justify-content: center;
 	align-items    : center;
-	flex-direction : column;
 }
 
-.tabs__production-headline {
-	color          : #2F2F51;
+.how-we-work__img {
+	width      : 100px;
+	height     : 83.582px;
+	flex-shrink: 0;
+}
+
+.how-we-work__block-text {
+	width      : 251.012px;
+	height     : 109.721px;
+	flex-shrink: 0;
+}
+
+.how-we-work__text {
+	color      : #000;
+	font-family: Roboto;
+	font-size  : 16px;
+	font-style : normal;
+	font-weight: 400;
+	line-height: 26px;
+	text-align : center;
+}
+
+.sertificate {
+	margin-right: 11px;
+}
+
+/*.sertificate:nth-child(2) {
+	margin-left: 101px;
+}
+
+/*
+.sertificate:nth-child(5) {
+	margin-right: 101px;
+}
+*/
+
+.about-company__reviews-block {
+	width         : 1200px;
+	height        : 461px;
+	flex-shrink   : 0;
+	display       : flex;
+	border-radius : 3px;
+	background    : #fff;
+	flex-direction: column;
+	align-items   : center;
+}
+
+.about-company__reviews-block_name-block {
+	display    : flex;
+	width      : 100%;
+	margin-top : 62px;
+	margin-left: 0px;
+}
+
+.about-company__leave-review-block {
+	display        : flex;
+	position       : relative;
+	color          : #fff;
 	font-family    : Roboto;
-	font-size      : 24px;
+	font-size      : 16px;
 	font-style     : normal;
 	font-weight    : 700;
 	line-height    : normal;
-	display        : flex;
+	width          : 214.25px;
+	height         : 54.5px;
+	flex-shrink    : 0;
+	border-radius  : 3px;
+	background     : #ef7f1a;
 	justify-content: center;
-}
-
-.tabs-item {
-	width        : 1145px;
-	height       : 461px;
-	border-radius: 3px;
-	background   : #FFF;
-}
-
-.tabs__production-nav {
-	overflow       : hidden;
-	margin         : 0;
-	padding        : 0;
-	display        : flex;
-	justify-content: center;
-	margin-top     : 34px;
-}
-
-.tabs__production-nav li {
-	display     : block;
-	float       : left;
-	padding     : 0;
-	list-style  : none;
-	margin-right: 20px;
-}
-
-.tabs__production-nav a {
-	display        : block;
-	padding        : 10px 20px;
+	align-items    : center;
+	margin-left    : 364px;
+	margin-right   : 0;
+	cursor         : pointer;
 	text-decoration: none;
-	text-align     : center;
-	color          : #2F2F51;
+}
+
+.leave-review-icon {
+	display        : flex;
+	justify-content: center;
+	align-items    : center;
+}
+
+.about-company__name {
+	color       : #2f2f51;
+	font-family : Roboto;
+	font-size   : 18px;
+	font-style  : normal;
+	font-weight : 700;
+	line-height : normal;
+	padding-left: 102px;
+}
+
+.about-company__contract {
+	color      : #8f8f8f;
+	font-family: Roboto;
+	font-size  : 14px;
+	font-style : normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-left: 59px;
+	width      : 209px;
+	padding-top: 4px;
+}
+
+.about-company__leave-review {
+	margin-left: 18px;
+}
+
+.about-company__reviews-slider_control {
+	position       : absolute;
+	top            : 50%;
+	display        : flex;
+	width          : 100%;
+	justify-content: space-between;
+}
+
+.reviews-slider_control-left {
+	display : flex;
+	position: absolute;
+	left    : 38px;
+}
+
+.reviews-slider_control-right {
+	display : flex;
+	position: absolute;
+	right   : 34px;
+}
+
+.about-company__reviews-slider_block-comment {
+	width          : 796px;
+	flex-shrink    : 0;
+	color          : #434343;
+	text-align     : justify;
 	font-family    : Roboto;
-	font-size      : 18px;
+	font-size      : 16px;
 	font-style     : normal;
 	font-weight    : 400;
 	line-height    : normal;
-}
-
-
-.tabs__production-nav a.active {
-	background   : #EF7F04;
-	border-radius: 3px;
-	color        : #FFF;
-}
-
-.tabs-items {
-	margin-top     : 27px;
-	width          : 1145px;
-	height         : 461px;
-	border-radius  : 3px;
-	background     : #FFF;
+	align-items    : center;
 	display        : flex;
 	justify-content: center;
-	align-items    : center;
-}
-
-.production__owl-carousel {
-	width  : 100%;
-	z-index: 1
-}
-
-.production__owl-1 .owl-nav {
-	width   : 100%;
-	position: absolute;
-	top     : 50%;
-}
-
-.production-block-slider {
-	position: relative;
-}
-
-<style>#hcg-slider-1 .hcg-slide-container {
-	width : auto;
-	height: auto;
-}
-
-.hcg-slider {
-	text-align : center;
-	font-family: Arial, Helvetica, sans-serif;
-}
-
-.hcg-slide-container {
-	max-width: 100%;
-	display  : inline-block;
-	position : relative;
-}
-
-.hcg-slides {
-	display        : none;
-	overflow       : hidden;
-	justify-content: center;
-	align-items    : center;
-	border-radius  : 5px;
-	border         : solid 1px #a0a0a0;
-}
-
-.hcg-slides img {
-	max-width : 100%;
-	max-height: 100%;
-	display   : inline-block;
-}
-
-.hcg-slide-text {
-	color           : #ffffff;
-	font-size       : 14px;
-	padding         : 3px 5px;
-	position        : absolute;
-	bottom          : 0;
-	border-radius   : 5px;
-	left            : 50%;
-	text-align      : center;
-	text-shadow     : 0 0 2px #000;
-	background-color: rgba(255, 255, 255, 0.30);
-	display         : inline-block;
-	transform       : translate(-50%, -5px);
-}
-
-#hcg-slide-prev,
-#hcg-slide-next {
-	cursor         : pointer;
-	position       : absolute;
-	top            : 50%;
-	width          : auto;
-	padding        : 16px;
-	margin-top     : -22px;
-	color          : #fff;
-	font-weight    : bold;
-	font-size      : 18px;
-	transition     : 0.6s ease;
-	border-radius  : 0 3px 3px 0;
-	text-decoration: none;
-	text-shadow    : 1px 1px 5px #686868;
-}
-
-#hcg-slide-next {
-	right        : 0;
-	border-radius: 3px 0 0 3px;
-}
-
-#hcg-slide-prev {
-	left         : 0;
-	border-radius: 0 3px 3px 0;
-}
-
-#hcg-slide-prev:hover,
-#hcg-slide-next:hover {
-	background-color: #000c;
-}
-
-.hcg-slide-dot-control {
-	margin-top: 10px;
-	text-align: center;
-}
-
-.hcg-slide-dot {
-	cursor          : pointer;
-	height          : 13px;
-	width           : 13px;
-	margin          : 0 2px;
-	background-color: #bbb;
-	border-radius   : 50%;
-	display         : inline-block;
-}
-
-.hcg-slide-dot.dot-active {
-	background-color: #717171;
-}
-
-.hcg-slide-number {
-	color           : #ffffff;
-	font-size       : 12px;
-	padding         : 4px 7px;
-	position        : absolute;
-	border-radius   : 5px;
-	top             : 5px;
-	left            : 5px;
-	background-color: rgba(255, 255, 255, 0.30);
-}
-
-/************CSS Animation***********/
-
-.animated {
-	animation-name    : fadeInLeft;
-	animation-duration: 1s;
-}
-
-@keyframes fadeInLeft {
-	0% {
-		opacity  : 0;
-		transform: translateX(-20px);
-	}
-
-	100% {
-		opacity  : 1;
-		transform: translateX(0);
-	}
-}
-
-.fadeInLeft {
-	animation-name: fadeInLeft;
+	margin-top     : 37px;
 }
 
 
-</style>
+// Слайдер для вкладки отзывы 
+
+.about-company-slides {}
