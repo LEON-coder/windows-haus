@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+
+.container-questions-answer {
+	display       : flex;
+	flex-direction: column;
+	align-items   : center;
+	width         : 1200px;
+	height        : auto;
+	border-radius : 7px;
+	background    : #ef7f1a;
+	margin-left   : auto;
+	margin-right  : auto;
+	margin-top    : 81px;
+}
+
+.questions-answer__headline {
+	color        : #FFF;
+	font-family  : Roboto;
+	font-size    : 24px;
+	font-style   : normal;
+	font-weight  : 700;
+	line-height  : normal;
+	transition   : 0.2s;
+	margin-top   : 40px;
+	margin-bottom: 59px;
+}
+
+.content-questions {
+	position    : relative;
+	max-height  : 0px;
+	background  : rgb(238, 238, 243);
+	overflow    : hidden;
+	transition  : all 0.6s ease 0s;
+	padding-left: 20px;
+}
+
+
+.container-questions-answer .box {
+	position  : relative;
+	transition: .5s;
+}
+
+.container-questions-answer .box:last-child {
+	margin-bottom: 63px;
+}
+
+.container-questions-answer .box .label {
+	position: relative;
+}
+
+.container-questions-answer .box .label::after {
+	content    : url(../Accordeon/Vector\ 19.png);
+	position   : absolute;
+	top        : 25px;
+	right      : 20px;
+	font-size  : 25px;
+	font-weight: bold;
+	transition : .6s;
+}
+
+.container-questions-answer .box .label:hover::after {
+	content   : url(../Accordeon/Vector_hover.png);
+	transition: .6s;
+	position  : absolute;
+	top       : 25px;
+	right     : 20px;
+}
+
+.container-questions-answer .box.active {
+	height            : 131px;
+	transition        : 1s;
+	-webkit-transition: 1s;
+	-moz-transition   : 1s;
+	-ms-transition    : 1s;
+	-o-transition     : 1s;
+}
+
+.container-questions-answer .box.active .content-questions {
+	display           : flex;
+	transition        : 1s;
+	-webkit-transition: 1s;
+	-moz-transition   : 1s;
+	-ms-transition    : 1s;
+	-o-transition     : 1s;
+	padding-left      : 20px;
+}
+
+.content-questions {
+	width      : 874px;
+	height     : 35px;
+	flex-shrink: 0;
+	color      : #000;
+	font-family: Roboto;
+	font-size  : 16px;
+	font-style : normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.container-questions-answer .box.active .label::after {
+	content           : url(../Accordeon/Vector\ 19.png);
+	transform         : rotate(180deg);
+	/*Меняем иконку на"-"принажатиинаэлемент*/
+	-webkit-transform : rotate(180deg);
+	-moz-transform    : rotate(180deg);
+	-ms-transform     : rotate(180deg);
+	-o-transform      : rotate(180deg);
+	transition        : .6s;
+	-webkit-transition: .6s;
+	-moz-transition   : .6s;
+	-ms-transition    : .6s;
+	-o-transition     : .6s;
+	fill              : #ef7f1a;
+}
+
+
+.container-questions-answer .box .content {
+	position          : relative;
+	background        : #eeeef3;
+	/*Цветфонаконтента*/
+	overflow          : hidden;
+	max-height        : 0;
+	/*Скрываемконтент*/
+	transition        : 0.6s;
+	/* Для плавности анимации */
+	-webkit-transition: 0.6s;
+	-moz-transition   : 0.6s;
+	-ms-transition    : 0.6s;
+	-o-transition     : 0.6s;
+}
+
+.container-questions-answer .box .content p {
+	padding-left  : 20px;
+	padding-bottom: 20px;
+}
+
+.questions-answer-block {
+	width          : 100%;
+	display        : flex;
+	flex-direction : column;
+	justify-content: center;
+	align-items    : center;
+	margin-top     : 86px;
+}
+
+
+.questions-answer-block__wrap {
+	display       : flex;
+	flex-direction: column;
+	align-items   : center;
+	width         : 1200px;
+	height        : 791.5px;
+	border-radius : 7px;
+	background    : #ef7f1a;
+}
+
+.questions-answer__item-block {
+	display       : flex;
+	flex-direction: column;
+	height        : auto;
+}
+
+.questions-answer__item_open-block {
+	display           : none;
+	justify-content   : left;
+	width             : 100%;
+	padding-left      : 19px;
+	background        : #eeeef3;
+	transition        : 0.3s ease;
+	padding-bottom    : 19px;
+	flex-shrink       : 0;
+	-webkit-transition: 0.3s ease;
+	-moz-transition   : 0.3s ease;
+	-ms-transition    : 0.3s ease;
+	-o-transition     : 0.3s ease;
+}
+
+.questions-answer__item-top {
+	display        : flex;
+	align-items    : center;
+	width          : 100%;
+	justify-content: space-between;
+}
+
+.questions-answer__item {
+	background   : #eeeef3;
+	width        : 998px;
+	border-radius: 3px;
+	margin-bottom: 14px;
+	height       : 82px;
+	transition   : 1s;
+}
+
+.questions-answer__item_open-text {
+	color      : #000;
+	font-family: Roboto;
+	font-size  : 16px;
+	font-style : normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.questions-answer__list-active {
+	height     : 131px;
+	align-items: baseline;
+}
+
+.questions-answer__list-show {
+	display    : flex;
+	width      : 998px;
+	height     : 131px;
+	align-items: baseline;
+}
+
+.list-show-block {
+	display: flex;
+}
+
+.height-answer {
+	margin-top: 31px;
+}
+
+.answer {
+	margin-top: 24.5px;
+}
+
+.questions-answer-headline {
+	text-decoration: none;
+	color          : #2f2f51;
+	font-family    : Roboto;
+	font-size      : 18px;
+	font-style     : normal;
+	font-weight    : 700;
+	line-height    : normal;
+	box-sizing     : border-box;
+	align-items    : center;
+	display        : flex;
+	padding        : 31px 19px 29px;
+}
+
+.questions-answer__item--active {
+	text-decoration: none;
+	color          : #2f2f51;
+	font-family    : Roboto;
+	font-size      : 18px;
+	font-style     : normal;
+	font-weight    : 700;
+	line-height    : normal;
+	padding-left   : 19px;
+	display        : flex;
+	height         : 131px;
+	flex-direction : column;
+	margin-top     : 60px;
+	align-items    : baseline;
+}
+
+#questions-answer__item--area-active {
+	height: 131px;
+}
+
+.item--active {
+	display: flex;
+	height : 131px;
+}
+
+.questions-answer__item--active {
+	display: flex;
+	height : 131px;
+}
+
+.questions-answer__item:hover .questions-answer-headline {
+	color: #EF7F04;
+}
+
+.questions-answer__item:hover .arrow-bottom {
+	stroke: #EF7F04;
+}
+
+.arrow-bottom {
+	stroke-width: 2px;
+	stroke      : #2F2F51;
+	margin-right: 30px;
+	display     : flex;
+	align-items : center;
+	width       : 28px;
+	height      : 20px;
+	flex-shrink : 0;
+}
+
+.arrow-bottom--active {
+	transform        : rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform   : rotate(180deg);
+	-ms-transform    : rotate(180deg);
+	-o-transform     : rotate(180deg);
+}
+
+h2 {
+	color        : #fff;
+	font-family  : Roboto;
+	font-size    : 24px;
+	font-style   : normal;
+	font-weight  : 700;
+	line-height  : normal;
+	margin-top   : 40px;
+	margin-bottom: 49px;
+}
+
+.answer {
+	margin-top: 24.5px;
+	display   : none;
+}

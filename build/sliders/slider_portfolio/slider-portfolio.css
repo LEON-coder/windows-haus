@@ -16,6 +16,14 @@
 	width          : 100%;
 }
 
+.slider-tabs-production {
+	display      : flex;
+	margin       : 0;
+	padding-left : 0;
+	padding-right: 0;
+	width        : 100%;
+}
+
 .slider__container {
 	position   : relative;
 	display    : flex;

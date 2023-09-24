@@ -24,7 +24,13 @@
 	display        : flex;
 	margin-top     : 35px;
 	justify-content: space-between;
-	background     : #FFF;
+
+}
+
+.about-company__tabs-production_content {
+	display        : flex;
+	margin-top     : 35px;
+	justify-content: space-between;
 }
 
 .about-company__logo {

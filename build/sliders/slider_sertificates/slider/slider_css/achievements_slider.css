@@ -364,7 +364,7 @@ p.ism-badge a.ism-link:hover {
 #my-slider:before {
     content    : '';
     display    : block;
-    padding-top: 5%;
+    padding-top: 0;
 }
 
 #my-slider .ism-button {

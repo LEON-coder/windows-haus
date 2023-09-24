@@ -1,0 +1,236 @@
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev-review:before,
+.slick-next-review:before {
+    color: black;
+}
+
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity   : .2;
+}
+
+.slick-active {
+    opacity: .5;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+.slider-review {
+    width          : 1200px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    position       : relative;
+    overflow-x     : hidden;
+}
+
+.slick-slider-review {
+    position: relative;
+
+    display   : block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+    -moz-user-select   : none;
+    -ms-user-select    : none;
+    user-select        : none;
+
+    -webkit-touch-callout      : none;
+    -khtml-user-select         : none;
+    -ms-touch-action           : pan-y;
+    touch-action               : pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+
+    display : block;
+    overflow: hidden;
+
+    margin : 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider-review .slick-track,
+.slick-slider-review .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform   : translate3d(0, 0, 0);
+    -ms-transform    : translate3d(0, 0, 0);
+    -o-transform     : translate3d(0, 0, 0);
+    transform        : translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top     : 0;
+    left    : 0;
+
+    display     : block;
+    margin-left : auto;
+    margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float  : left;
+
+    height    : 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.block-review {
+    display       : flex;
+    flex-direction: column;
+    width         : 1200px;
+}
+
+.block-review__headline {
+    display    : flex;
+    margin-top : 55px;
+    align-items: center;
+}
+
+.block-review__name {
+    color       : #2F2F51;
+    font-family : Roboto;
+    font-size   : 18px;
+    font-style  : normal;
+    font-weight : 700;
+    line-height : normal;
+    margin-right: 59px;
+}
+
+.block-review__number-offer {
+    color      : #8F8F8F;
+    font-family: Roboto;
+    font-size  : 14px;
+    font-style : normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.block-review__link-block {
+    border-radius: 3px;
+    background   : #EF7F1A;
+    display      : flex;
+    align-items  : center;
+    margin-left  : 364px;
+    width        : 214.25px;
+    height       : 54.5px;
+    flex-shrink  : 0;
+    cursor       : pointer;
+}
+
+.block-review__link {
+    flex-shrink    : 0;
+    color          : #FFF;
+    font-family    : Roboto;
+    font-size      : 16px;
+    font-style     : normal;
+    font-weight    : 700;
+    line-height    : normal;
+    border-radius  : 3px;
+    background     : #EF7F1A;
+    text-decoration: none;
+    display        : flex;
+    align-items    : center;
+}
+
+.block-review__link-img {
+    width       : 25px;
+    height      : 22.5px;
+    flex-shrink : 0;
+    margin-left : 20px;
+    margin-right: 18px;
+}
+
+.block-review__text {
+    display        : flex;
+    justify-content: center;
+    width          : 796px;
+    height         : 199px;
+    flex-shrink    : 0;
+    color          : #434343;
+    text-align     : justify;
+    font-family    : Roboto;
+    font-size      : 16px;
+    font-style     : normal;
+    font-weight    : 400;
+    line-height    : normal;
+    margin-top     : 64px;
+    margin-left    : auto;
+    margin-right   : auto;
+}

@@ -85,7 +85,7 @@
 }
 
 .slick-prev:before {
-    content: url(../../slider_review/Vector\ 9.png);
+    content: url('../../Vector 9.png');
 }
 
 [dir='rtl'] .slick-prev:before {
@@ -93,7 +93,8 @@
 }
 
 .slick-next {
-    right: -25px;
+    right    : -25px;
+    transform: rotate(180deg);
 }
 
 [dir='rtl'] .slick-next {
@@ -102,7 +103,12 @@
 }
 
 .slick-next:before {
-    content: '→';
+    content          : url(../../Vector\ 9.png);
+    transform        : rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform   : rotate(180deg);
+    -ms-transform    : rotate(180deg);
+    -o-transform     : rotate(180deg);
 }
 
 [dir='rtl'] .slick-next:before {

@@ -41,13 +41,7 @@
   top     : 50%;
 }
 
-.owl-1 .owl-nav .owl-next,
-.owl-1 .owl-nav .owl-prev {
-  border  : 1px solid red;
-  z-index : 92;
-  position: absolute;
-  top     : 50%;
-}
+
 
 .owl-1 .owl-nav .owl-next:active,
 .owl-1 .owl-nav .owl-next:focus,
