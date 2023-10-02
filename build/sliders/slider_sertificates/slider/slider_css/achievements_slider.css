@@ -854,7 +854,7 @@ p.ism-badge a.ism-link:hover {
 
 .achievements__slider-block {
     display        : flex;
-    width          : 1457px;
+    width          : auto;
     height         : 420px;
     justify-content: center;
     align-items    : center;

@@ -28,12 +28,9 @@
 }
 
 .slider-review {
-    width          : 1200px;
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
-    position       : relative;
-    overflow-x     : hidden;
+    width     : 990px;
+    display   : flex;
+    overflow-x: hidden;
 }
 
 .slick-slider-review {
@@ -231,6 +228,5 @@
     font-weight    : 400;
     line-height    : normal;
     margin-top     : 64px;
-    margin-left    : auto;
-    margin-right   : auto;
+    margin-left    : 100px;
 }
