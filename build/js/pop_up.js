@@ -111,7 +111,7 @@ orderPaymentClose.addEventListener('click',function () {
 
 // Функция открытия модального окна для ссылки "оставить отзыв" во вкладке about-company__reviews-block
 
-let linkOpenRewiev = document.querySelector('.about-company__leave-review-block')
+let linkOpenRewiev = document.querySelector('.block-review__link-block')
 let rewievBlogBackground = document.querySelector('.rewiev-blog__background')
 let rewievBlogClose = document.querySelector('.rewiev-blog__close')
 

@@ -9,7 +9,7 @@ let prevArrows = document.querySelectorAll(".slider-portfolio__arrow_left");
 
 for (let prevArrow of prevArrows) {
 	prevArrow.addEventListener('click',function () {
-		let children = getSliderChildren(prevArrow)
+		let children = getSliderChildren(prevArrow);
 		children[0].before(children[children.length - 1])
 	});
 };

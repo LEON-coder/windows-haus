@@ -1456,12 +1456,8 @@ h1 {
 }
 
 * {
-	margin            : 0;
-	padding           : 0;
-	box-sizing        : border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing   : border-box;
-	-webkit-appearance: none;
 	-moz-appearance   : none;
 }
 
