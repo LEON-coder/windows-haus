@@ -1691,21 +1691,16 @@ footer {
 
 
 @media screen and (max-width: 1440px) {
-    nav {
-        width: 90%;
-    }
 
-    .nav__list {
-        color         : #fff;
+    .logo {
+        font-family   : Roboto;
+        font-size     : 32px;
+        font-weight   : 700;
+        line-height   : 38px;
+        letter-spacing: 0em;
+        text-align    : left;
         display       : flex;
-        list-style    : none;
-        flex-direction: row;
-        align-items   : flex-start;
-        padding       : 0;
-        gap           : 40px;
-        height        : 29px;
-        margin-top    : 40px;
-        margin-left   : 312px;
+        margin-left   : 0;
     }
 
     .our_works__img {
@@ -1714,7 +1709,43 @@ footer {
         height : 280px;
     }
 
+    .nav__list {
+        display    : flex;
+        margin-left: 0;
+        list-style : none;
+    }
 
+    .container {
+        width          : 90%;
+        height         : auto;
+        margin-top     : 180px;
+        display        : flex;
+        justify-content: center;
+        flex-direction : column;
+        align-items    : center;
+    }
+
+    .container-questions-answer {
+        display       : flex;
+        flex-direction: column;
+        align-items   : center;
+        width         : 90%;
+        height        : auto;
+        border-radius : 7px;
+        background    : #ef7f1a;
+        margin-left   : auto;
+        margin-right  : auto;
+        margin-top    : 81px;
+    }
+
+    .slider-tabs-production {
+        display        : flex;
+        margin         : 0;
+        padding-left   : 0;
+        padding-right  : 0;
+        width          : 100%;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 1024px) {

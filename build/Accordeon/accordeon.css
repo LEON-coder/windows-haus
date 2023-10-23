@@ -311,3 +311,30 @@ h2 {
 	margin-top: 24.5px;
 	display   : none;
 }
+
+
+
+@media screen and (max-width: 1440px) {
+	.container-questions-answer {
+		display       : flex;
+		flex-direction: column;
+		align-items   : center;
+		width         : 90%;
+		height        : auto;
+		border-radius : 7px;
+		background    : #ef7f1a;
+		margin-left   : auto;
+		margin-right  : auto;
+		margin-top    : 81px;
+		max-width     : 1200px;
+	}
+
+	.questions-answer__item {
+		background   : #eeeef3;
+		width        : 90%;
+		border-radius: 3px;
+		margin-bottom: 14px;
+		height       : 82px;
+		transition   : 1s;
+	}
+}

@@ -17,7 +17,7 @@
 
 .carousel-nav,
 .carousel-nav-tabs-production {
-  width          : 100%;
+  width : 100%;
   display        : flex;
   justify-content: center;
   align-items    : center;
@@ -345,4 +345,15 @@
   width      : 20px;
   height     : 17.778px;
   flex-shrink: 0;
+}
+
+@media screen and (max-width:1440px) {
+
+  .carousel-nav,
+  .carousel-nav-tabs-production {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    margin-top     : 40px;
+  }
 }
